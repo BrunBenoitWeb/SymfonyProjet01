@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title property.title %}
+
+{% block body %}
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    blabla image blabla vidéo...? ou pas à voir avec nounouillette blabla
+                </div>
+                <div class="col-md-4">
+                    <h1>{{ property.title }}</h1>
+                    <h2>{{ property.rooms }} pièce{% if property.rooms > 1 %}s{% endif%} - {{ property.surface }} m²</h2>
+                    <div class="text-primary" style="font-size: 4rem;font-weight: bold;">{{ property.formattedPrice }}€</div>
+                    <a href="#" class="btn btn-primary">Contacter l'agence</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <p>
+            {{ property.description | nl2br }}
+        </p>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Caractéristique</h2>
+                <table class="table table-striped">
+                    <tr>
+                        <td>Surface habitable</td>
+                        <td>{{ property.surface }} m²</td>
+                    </tr>
+                    <tr>
+                        <td>Pièce{% if property.rooms > 1 %}s{% endif%}</td>
+                        <td>{{ property.rooms }}</td>
+                    </tr>
+                    <tr>
+                        <td>chambre{% if property.bedrooms > 1 %}s{% endif%}</td>
+                        <td>{{ property.bedrooms }}</td>
+                    </tr>
+                    <tr>
+                        <td>Etage{% if property.floor > 1 %}s{% endif%}</td>
+                        <td>{{ property.floor }}</td>
+                    </tr>
+                    <tr>
+                        <td>Chauffage</td>
+                        <td>{{ property.heatType }}</td>
+                    </tr>
+                </table>
+                <div class="col-md-4">
+                    <h2>Spécificités</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

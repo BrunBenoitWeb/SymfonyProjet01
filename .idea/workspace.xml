@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2e2d9bb-c10c-453a-a43f-51ecf502dd70" name="Default Changelist" comment="" />
+    <list default="true" id="a2e2d9bb-c10c-453a-a43f-51ecf502dd70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/property/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/property/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/property/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/forms.fr.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +29,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -123,6 +138,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kQCFkuWywtItxRqEA7Ko81YCYV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -144,13 +160,26 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET" />
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -168,11 +197,24 @@
       <workItem from="1607445873973" duration="123000" />
       <workItem from="1607446799498" duration="754000" />
       <workItem from="1607447580636" duration="18904000" />
-      <workItem from="1607637181269" duration="7709000" />
+      <workItem from="1607637181269" duration="9059000" />
+      <workItem from="1607721791278" duration="21260000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

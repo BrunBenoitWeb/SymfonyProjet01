@@ -15,6 +15,7 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Property[]    findAll()
  * @method Property[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
+
 class PropertyRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
@@ -40,6 +41,16 @@ class PropertyRepository extends ServiceEntityRepository
             $query = $query
                 ->andWhere('p.surface >= :minsurface')
                 ->setParameter('minsurface', $search->getMinSurface());
+        }
+
+        if ($search->getOptions()->count() > 0 ){
+            $k =0;
+            foreach ($search->getOptions() as $option){
+                $k++;
+                $query = $query
+                    ->andWhere(":option$k MEMBER OF p.options")
+                    ->setParameter("option$k", $option);
+            }
         }
 
         return $query->getQuery();

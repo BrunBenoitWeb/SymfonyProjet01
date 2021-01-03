@@ -7,7 +7,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    blabla image blabla vidéo...? ou pas à voir avec nounouillette blabla
+                    {% if property.filename %}
+                        <img src="{{ vich_uploader_asset(property, 'imageFile' ) | imagine_filter('medium') }}" class="card-img-top" style="width: 100%; height: auto;">
+                    {% else %}
+                        <img src="{{ 'images/properties/celine.jpg' | imagine_filter('medium') }}" class="card-img-top" style="width: 100%; height: auto;">
+                    {% endif %}
                 </div>
                 <div class="col-md-4">
                     <h1>{{ property.title }}</h1>
@@ -48,9 +52,14 @@
                         <td>{{ property.heatType }}</td>
                     </tr>
                 </table>
-                <div class="col-md-4">
-                    <h2>Spécificités</h2>
-                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Spécificités</h2>
+                <ul class="list-group">
+                    {% for option in property.options %}
+                        <li class="list-group-item">{{ option.name }}</li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>

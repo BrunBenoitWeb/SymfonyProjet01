@@ -6,6 +6,7 @@ use App\Entity\Option;
 use App\Form\OptionType;
 use App\Repository\OptionRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -88,7 +89,6 @@ class AdminOptionController extends AbstractController
             $entityManager->remove($option);
             $entityManager->flush();
         }
-
-        return $this->redirectToRoute('admin.option.index');
+        return $this->redirectToRoute('admin.property.edit', ['id'=> $option]);
     }
 }

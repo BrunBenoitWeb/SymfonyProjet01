@@ -2,25 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2e2d9bb-c10c-453a-a43f-51ecf502dd70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPictureController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/modules/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MONPROJET.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MONPROJET.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7524e783-0742-4b2a-a6d4-6474a542c1e0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7524e783-0742-4b2a-a6d4-6474a542c1e0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/properties/celine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminOptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminOptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/PropertySearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/PropertySearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/OptionType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/OptionType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PropertySearchType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertySearchType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/PropertyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PictureRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PictureRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/property/_property.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/property/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/property/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translations/forms.fr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/forms.fr.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -159,6 +166,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/beberlei/doctrineextensions" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kQCFkuWywtItxRqEA7Ko81YCYV" />
@@ -174,8 +182,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/properties" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -188,33 +197,23 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\images\properties" />
-      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\src\Form" />
-      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\templates\admin\option" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\assets\js" />
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\media" />
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\images\properties" />
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\src\Controller\Admin" />
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET" />
-      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\src" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\images" />
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\assets\js" />
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\images\properties" />
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\src\Form" />
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\templates\admin\option" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -243,7 +242,17 @@
       <workItem from="1609846894561" duration="3321000" />
       <workItem from="1609850602830" duration="4548000" />
       <workItem from="1609855580590" duration="2467000" />
-      <workItem from="1609926777355" duration="14525000" />
+      <workItem from="1609926777355" duration="14892000" />
+      <workItem from="1610183230992" duration="6351000" />
+      <workItem from="1610190601081" duration="15011000" />
+      <workItem from="1610529716508" duration="61000" />
+      <workItem from="1610529810385" duration="39000" />
+      <workItem from="1610530256593" duration="127000" />
+      <workItem from="1610530846281" duration="3000" />
+      <workItem from="1610532108160" duration="28000" />
+      <workItem from="1610532628440" duration="134000" />
+      <workItem from="1610532775763" duration="64000" />
+      <workItem from="1610532851011" duration="21712000" />
     </task>
     <servers />
   </component>
@@ -261,5 +270,23 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="473" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1610613698979">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="473" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610613698979" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1610646594455">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610646594455" />
+    <state x="397" y="135" key="refactoring.ChangeSignatureDialog" timestamp="1610721679425">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="397" y="135" key="refactoring.ChangeSignatureDialog/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610721679425" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610720517697">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610720517697" />
   </component>
 </project>

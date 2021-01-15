@@ -1,5 +1,6 @@
 {
     "devDependencies": {
+        "@babel/preset-react": "^7.12.10",
         "@symfony/stimulus-bridge": "^1.1.0",
         "@symfony/webpack-encore": "^0.32.0",
         "autoprefixer": "^10.1.0",
@@ -20,6 +21,9 @@
     },
     "dependencies": {
         "jquery": "^3.5.1",
-        "select2": "^4.0.13"
+        "leaflet": "^1.7.1",
+        "places.js": "^1.19.0",
+        "select2": "^4.0.13",
+        "slick-carousel": "^1.8.1"
     }
 }

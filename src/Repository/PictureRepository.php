@@ -3,8 +3,11 @@
 namespace App\Repository;
 
 use App\Entity\Picture;
+use App\Entity\Property;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Persistence\ManagerRegistry;
+use function Doctrine\ORM\QueryBuilder;
 
 /**
  * @method Picture|null find($id, $lockMode = null, $lockVersion = null)
@@ -19,32 +22,33 @@ class PictureRepository extends ServiceEntityRepository
         parent::__construct($registry, Picture::class);
     }
 
-    // /**
-    //  * @return Picture[] Returns an array of Picture objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('p.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+    /**
+     * @param Property[] $properties
+     * @return ArrayCollection
+     */
 
-    /*
-    public function findOneBySomeField($value): ?Picture
+    public function findForProperties(array $properties): ArrayCollection
     {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
+        $qb= $this->createQueryBuilder('p');
+        $pictures = $qb
+            ->select('p')
+            ->where(
+                $qb->expr()->in(
+                    'p.id',
+                    $this->createQueryBuilder('p2')
+                        ->select('MIN(p2.id)')
+                        ->where('p2.property IN (:properties)')
+                        ->groupBy('p2.property')
+                        ->getDQL()
+                )
+            )
             ->getQuery()
-            ->getOneOrNullResult()
-        ;
+            ->setParameter('properties', $properties)
+            ->getResult();
+        $pictures = array_reduce($pictures, function (array $acc, Picture $picture){
+            $acc[$picture->getProperty()->getId()] = $picture;
+            return $acc;
+        }, []);
+        return new ArrayCollection($pictures);
     }
-    */
 }

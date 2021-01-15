@@ -7,12 +7,9 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Cocur\Slugify\Slugify;
-use phpDocumentor\Reflection\Types\This;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
-use Symfony\Component\HttpFoundation\File\File;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Validator\Constraints as Assert;
-use Vich\UploaderBundle\Mapping\Annotation as Vich;
+
 
 /**
  * @ORM\Entity(repositoryClass=PropertyRepository::class)
@@ -112,7 +109,14 @@ class Property
     /**
      * @ORM\Column(type="datetime")
      */
+
     private $updated_at;
+
+    /**
+     * @var Picture|null
+     */
+
+    private $picture;
 
     /**
      * @ORM\OneToMany(targetEntity=Picture::class, mappedBy="property", orphanRemoval=true, cascade={"persist"})
@@ -125,6 +129,16 @@ class Property
      *     })
      */
     private $pictureFiles;
+
+    /**
+     * @ORM\Column(type="float", scale=4, precision=6)
+     */
+    private $lat;
+
+    /**
+     * @ORM\Column(type="float", scale=4, precision=7)
+     */
+    private $lng;
 
     public function __construct()
     {
@@ -355,10 +369,13 @@ class Property
 
     public function getPicture(): ?Picture
     {
-        if ( $this->pictures->isEmpty()){
-            return null;
-        }
-            return $this->pictures->first();
+            return $this->picture;
+    }
+
+    public function setPicture(Picture $picture): self
+    {
+        $this->picture = $picture;
+        return $this;
     }
 
     public function addPicture(Picture $picture): self
@@ -403,6 +420,30 @@ class Property
             $this->addPicture($picture);
         }
         $this->pictureFiles = $pictureFiles;
+        return $this;
+    }
+
+    public function getLat(): ?float
+    {
+        return $this->lat;
+    }
+
+    public function setLat(float $lat): self
+    {
+        $this->lat = $lat;
+
+        return $this;
+    }
+
+    public function getLng(): ?float
+    {
+        return $this->lng;
+    }
+
+    public function setLng(float $lng): self
+    {
+        $this->lng = $lng;
+
         return $this;
     }
 

@@ -13,7 +13,6 @@ class OptionType extends AbstractType
     {
         $builder
             ->add('name')
-            /*->add('properties')*/
         ;
     }
 

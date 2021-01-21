@@ -5,7 +5,6 @@ namespace App\Entity;
 use App\Repository\PictureRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
-use Symfony\Component\Validator\Constraints as Assert;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
@@ -23,7 +22,6 @@ class Picture
 
     /**
      * NOTE: This is not a mapped field of entity metadata, just a simple property.
-     *@Assert\Image()
      * @Vich\UploadableField(mapping="property_image", fileNameProperty="filename")
      *
      * @var File|null

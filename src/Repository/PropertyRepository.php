@@ -6,6 +6,7 @@ use App\Entity\Picture;
 use App\Entity\Property;
 use App\Entity\PropertySearch;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
 use Knp\Component\Pager\Pagination\PaginationInterface;
@@ -21,24 +22,19 @@ use Knp\Component\Pager\PaginatorInterface;
 class PropertyRepository extends ServiceEntityRepository
 {
 
-    /**
-     * @var PaginatorInterface
-     */
-    private $paginator;
-
-    public function __construct(ManagerRegistry $registry, PaginatorInterface $paginator)
+    public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Property::class);
-        $this->paginator = $paginator;
+
     }
 
     /**
      * @param PropertySearch $search
      * @param int $page
-     * @return PaginationInterface
+     * @return Query
      */
 
-    public function paginateAllVisible(PropertySearch $search, int $page): PaginationInterface
+    public function FindAllVisible(PropertySearch $search): Query
     {
         $query = $this->findVisibleQuery();
 
@@ -70,15 +66,7 @@ class PropertyRepository extends ServiceEntityRepository
                     ->setParameter("option$k", $option);
             }
         }
-
-        $properties = $this->paginator->paginate(
-            $query->getQuery(),
-            $page,
-            12
-        );
-
-        $this->hydratePicture($properties);
-        return $properties;
+        return $query->getQuery();
     }
 
     /**
@@ -102,6 +90,8 @@ class PropertyRepository extends ServiceEntityRepository
         return $this->createQueryBuilder('p')
             ->where('p.sold = false');
     }
+
+
     private function hydratePicture($properties)
     {
         if (method_exists($properties, 'getItems')) {

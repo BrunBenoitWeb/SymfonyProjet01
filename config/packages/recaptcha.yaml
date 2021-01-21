@@ -1,0 +1,7 @@
+recaptcha:
+  key: '%env(GOOGLE_RECAPTCHA_KEY)%'
+  secret: '%env(GOOGLE_RECAPTCHA_SECRET)%'
+
+ # key default
+#key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+#secret: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe

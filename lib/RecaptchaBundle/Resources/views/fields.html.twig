@@ -1,0 +1,19 @@
+{% block recaptcha_submit_widget %}
+    <script src="https://www.google.com/recaptcha/api.js" ></script>
+    <script>
+        function RecaptchaSubmit() {
+            let elem =document.getElementById('{{ id }}')
+            while (elem.parentElement !== null){
+                if (elem.tagName=== 'FORM'){
+                    elem.submit()
+                    break
+                }
+                elem = elem.parentElement
+            }
+        }
+    </script>
+    <div class="g-recaptcha"
+            data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            data-callback="RecaptchaSubmit"></div>
+
+{% endblock %}

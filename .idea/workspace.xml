@@ -1,31 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a2e2d9bb-c10c-453a-a43f-51ecf502dd70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/modules/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/recaptcha.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/RecaptchaBundle/Constraints/Recaptcha.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/RecaptchaBundle/Constraints/RecaptchaValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/RecaptchaBundle/DependencyInjection/Configuration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/RecaptchaBundle/DependencyInjection/RecaptchaExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/RecaptchaBundle/RecaptchaBundle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/RecaptchaBundle/RecaptchaCompilerPass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/RecaptchaBundle/Resources/config/services.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/RecaptchaBundle/Resources/views/fields.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/RecaptchaBundle/Type/RecaptchaSubmitType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MONPROJET.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MONPROJET.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7524e783-0742-4b2a-a6d4-6474a542c1e0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7524e783-0742-4b2a-a6d4-6474a542c1e0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminOptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminOptionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Picture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Picture.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/PropertySearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/PropertySearch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/OptionType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/OptionType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PropertySearchType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertySearchType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PropertyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ContactType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/PictureRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PictureRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/property/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/property/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/forms.fr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/forms.fr.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,6 +186,7 @@
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/beberlei/doctrineextensions" />
+      <path value="$PROJECT_DIR$/vendor/google/recaptcha" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kQCFkuWywtItxRqEA7Ko81YCYV" />
@@ -192,7 +212,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -200,19 +220,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\assets\js" />
-      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\media" />
-      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\images\properties" />
-      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\src\Controller\Admin" />
-      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\images" />
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\assets\js" />
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\images\properties" />
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\src\Form" />
       <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\templates\admin\option" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\lib\RecaptchaBundle\Constraints" />
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\assets\js" />
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\media" />
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\public\images\properties" />
+      <recent name="C:\Users\brunb\Documents\apprentissage code\grafikart\ProjetGitHub\ProjetSymfony\MONPROJET\src\Controller\Admin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -252,7 +272,8 @@
       <workItem from="1610532108160" duration="28000" />
       <workItem from="1610532628440" duration="134000" />
       <workItem from="1610532775763" duration="64000" />
-      <workItem from="1610532851011" duration="21712000" />
+      <workItem from="1610532851011" duration="26363000" />
+      <workItem from="1610732495557" duration="43712000" />
     </task>
     <servers />
   </component>
@@ -272,21 +293,68 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="473" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1610613698979">
+    <state x="425" y="188" key="#Notifications" timestamp="1610732540901">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="473" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610613698979" />
+    <state x="425" y="188" key="#Notifications/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610732540901" />
+    <state x="272" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610735156758">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610735156758" />
+    <state x="473" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1611234976790">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="473" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1611234976790" />
+    <state x="389" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611136199815">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="389" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1611136199815" />
+    <state x="189" y="0" key="CommitChangelistDialog2" timestamp="1610734873637">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="189" y="0" key="CommitChangelistDialog2/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610734873637" />
+    <state x="128" y="55" key="DiffContextDialog" timestamp="1610734856794">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="128" y="55" key="DiffContextDialog/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610734856794" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1610735111686">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610735111686" />
+    <state x="261" y="87" key="NewPhpClassDialog" timestamp="1611233843578">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="261" y="87" key="NewPhpClassDialog/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1611233843578" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1610646594455">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610646594455" />
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610734796295">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610734796295" />
+    <state x="497" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610734807278">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="497" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610734807278" />
     <state x="397" y="135" key="refactoring.ChangeSignatureDialog" timestamp="1610721679425">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="397" y="135" key="refactoring.ChangeSignatureDialog/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610721679425" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610720517697">
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611238594351">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1610720517697" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728/-1024.0.1024.728@0.0.1360.728" timestamp="1611238594351" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/lib/RecaptchaBundle/Resources/views/fields.html.twig</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

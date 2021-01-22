@@ -9,8 +9,7 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
-use Knp\Component\Pager\Pagination\PaginationInterface;
-use Knp\Component\Pager\PaginatorInterface;
+
 
 /**
  * @method Property|null find($id, $lockMode = null, $lockVersion = null)
@@ -30,7 +29,6 @@ class PropertyRepository extends ServiceEntityRepository
 
     /**
      * @param PropertySearch $search
-     * @param int $page
      * @return Query
      */
 

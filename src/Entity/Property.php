@@ -9,14 +9,18 @@ use Doctrine\ORM\Mapping as ORM;
 use Cocur\Slugify\Slugify;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
-
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=PropertyRepository::class)
+ * @ORM\HasLifecycleCallbacks()
  * @UniqueEntity("title")
+ * @Vich\Uploadable()
  */
 class Property
 {
+    use Timestamps;
+
     const HEAT = [
         0 => 'electric',
         1 => 'gaz',
@@ -96,24 +100,22 @@ class Property
      */
     private $sold = false;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
-    private $created_at;
+
 
     /**
      * @ORM\ManyToMany(targetEntity=Option::class, inversedBy="properties")
      */
     private $options;
 
+
+
     /**
-     * @ORM\Column(type="datetime")
+     * @var Picture|null
      */
-
-    private $updated_at;
+    private $picture;
 
     /**
-     * @ORM\OneToMany(targetEntity=Picture::class, mappedBy="property", orphanRemoval=true, cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="App\Entity\Picture", cascade={"persist"}, mappedBy="property", orphanRemoval=true)
      */
     private $pictures;
 
@@ -303,12 +305,12 @@ class Property
 
     public function getCreatedAt(): ?\DateTimeInterface
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
     public function setCreatedAt(\DateTimeInterface $created_at): self
     {
-        $this->created_at = $created_at;
+        $this->createdAt = $created_at;
 
         return $this;
     }
@@ -343,12 +345,12 @@ class Property
 
     public function getUpdatedAt(): ?\DateTimeInterface
     {
-        return $this->updated_at;
+        return $this->updatedAt;
     }
 
     public function setUpdatedAt(\DateTimeInterface $updated_at): self
     {
-        $this->updated_at = $updated_at;
+        $this->updatedAt = $updated_at;
 
         return $this;
     }
@@ -363,15 +365,15 @@ class Property
 
     public function getPicture(): ?Picture
     {
-            if ($this->pictures->isEmpty()){
-                return null;
-            }
+        if ($this->pictures->isEmpty()){
+            return null;
+        }
             return $this->pictures->first();
     }
 
     public function setPicture(Picture $picture): self
     {
-        $this->picture = $picture;
+         $this->picture= $picture;
         return $this;
     }
 
@@ -388,6 +390,7 @@ class Property
     public function removePicture(Picture $picture): self
     {
         if ($this->pictures->removeElement($picture)) {
+            $this->pictures->removeElement($picture);
             // set the owning side to null (unless already changed)
             if ($picture->getProperty() === $this) {
                 $picture->setProperty(null);

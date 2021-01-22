@@ -1,6 +1,6 @@
 <div class="card mb-4">
     {% if property.picture %}
-        <img src="{{ vich_uploader_asset(property.picture , 'imageFile' ) | imagine_filter('thumb') }}" class="card-img-top" alt="" style="width: 100%; height: auto;">
+            <img src="{{ vich_uploader_asset(property.picture, 'imageFile') | imagine_filter('thumb') }}" alt="card-img-top" style="width: 100%; height:auto;">
     {% else %}
         <img src="{{ 'images/properties/valy.JPG' | imagine_filter('thumb') }}" alt="card-img-top" style="width: 100%; height: auto;">
     {% endif %}

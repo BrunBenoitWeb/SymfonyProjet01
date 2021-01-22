@@ -25,25 +25,24 @@ class PropertyType extends AbstractType
             ->add('floor')
             ->add('price')
             ->add('heat', ChoiceType::class, [
-                'choices' => $this->getChoices()
+                'choices' => array_flip(Property::HEAT)
             ])
             ->add('options', EntityType::class, [
                 'class' => Option::class,
-                'required'=> false,
-                'choice_label'=> 'name',
+                'required' => false,
+                'choice_label' => 'name',
                 'multiple' => true
             ])
-            ->add('pictureFiles', FileType::class,[
+            ->add('pictureFiles', FileType::class, [
                 'required' => false,
                 'multiple' => true
             ])
             ->add('city')
             ->add('address')
             ->add('postal_code')
-            ->add('lat', HiddenType::class)
-            ->add('lng', HiddenType::class)
-            ->add('sold')
-        ;
+            ->add('lat')
+            ->add('lng')
+            ->add('sold');
     }
 
     public function configureOptions(OptionsResolver $resolver)
@@ -53,6 +52,12 @@ class PropertyType extends AbstractType
             'translation_domain' => 'forms'
         ]);
     }
+}
+
+/*
+->add('heat', ChoiceType::class, [
+'choices' => $this->getChoices()
+])
 
     private function getChoices(): array
     {
@@ -64,3 +69,5 @@ class PropertyType extends AbstractType
             return $output;
     }
 }
+
+*/
